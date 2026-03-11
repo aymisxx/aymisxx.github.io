@@ -1,10 +1,10 @@
-# **आयुष्मान् मिश्र**
-## **Ayushman Mishra**
+# **आयुष्मान् मिश्र** 🚀
+## **AYUSHMAN MISHRA**
 ## **संप्रभुता। एकत्व। नियंत्रण।**
 
 Focused on **autonomous systems, control theory, reinforcement learning, and robotic perception**.
 
-🌐 **Live Website:** https://aymisxx.github.io
+🌐 **Live (To Be) Website:** https://aymisxx.github.io
 
 ---
 
