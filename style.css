@@ -1,8 +1,8 @@
 :root {
-  --bg-top: #c2a0ff;
-  --bg-mid: #a983ff;
-  --bg-deep: #4b3bb7;
-  --bg-night: #120c2b;
+  --bg-top: #a983ff;
+  --bg-mid: #7c5de6;
+  --bg-deep: #3c2fa3;
+  --bg-night: #0e0a24;
 
   --panel-bg: rgba(255, 255, 255, 0.12);
   --panel-border: rgba(255, 255, 255, 0.25);
@@ -608,8 +608,8 @@ main {
 .project-description,
 .page-intro-panel p {
   text-shadow:
-    0 1px 10px rgba(0, 0, 0, 1),
-    0 0 6px rgba(0, 0, 0, 0.75);
+    0 1px 6px rgba(0, 0, 0, 0.75),
+    0 0 6px rgba(0, 0, 0, 0.5);
 }
 
 .projects-grid {
