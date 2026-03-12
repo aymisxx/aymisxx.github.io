@@ -51,7 +51,6 @@
     <main>
       <section class="page-hero">
         <div class="page-hero-content glass-panel">
-          <p class="section-tag">AUTONOMOUS SYSTEMS</p>
           <h1 class="page-title">Autonomy</h1>
           <p class="page-subtitle">
             Navigation, coverage, decentralized coordination, and learned decision-making systems
@@ -102,10 +101,7 @@
                 <h3 class="project-title">AgriDroneRL</h3>
               </div>
               <p class="project-description">
-                A vision-based reinforcement learning project for autonomous drone navigation over
-                agricultural fields using a custom environment and an NDVI-style vegetation proxy.
-                The system compares PPO, DQN, and A2C under sparse first-visit rewards, focusing on
-                coverage efficiency, exploration behavior, and vegetation-aware decision-making.
+                AgriDroneRL is a vision-driven reinforcement learning framework designed for autonomous drone navigation and coverage optimization over agricultural terrain. The system operates within a custom simulation environment where aerial observations are represented through a normalized vegetation index proxy derived from satellite-style imagery, enabling the agent to reason about spatial crop health distribution. Using pixel-based inputs, reinforcement learning agents including PPO, DQN, and A2C are trained to maximize field coverage through sparse first-visit rewards while avoiding redundant exploration. The environment models discrete drone motion and local observation windows, allowing policies to learn spatial exploration strategies under limited perceptual context. The training environment is built on the MicroUAV-2D simulator (check 'Platforms' tab), providing a fast and deterministic platform for aerial perception–action experimentation. Training dynamics, reward accumulation, and trajectory efficiency are analyzed to evaluate how different reinforcement learning algorithms perform under sparse-reward navigation tasks. The framework provides a controlled experimental platform for studying vision-based exploration policies, coverage planning, and reinforcement learning behavior in aerial monitoring systems for precision agriculture.
               </p>
               <div class="project-tags">
                 <span class="project-tag">PPO / DQN / A2C</span>
@@ -129,18 +125,16 @@
             <div class="project-content">
               <div class="project-topline">
                 <img src="assets/icons/autonomy.svg" alt="" class="project-icon" />
-                <h3 class="project-title">PPO Driven Swarm Control</h3>
+                <h3 class="project-title">PPO-driven Swarm Control</h3>
               </div>
               <p class="project-description">
-                A hybrid multi-robot autonomy framework that combines PPO-based local navigation with
-                classical swarm-control structure, including artificial potential fields, graph-based
-                consensus, and stochastic role switching. The project shows how pure RL can be extended
-                into interpretable and scalable swarm behavior through theory-guided system design.
+                PPO-Driven Swarm Control is a hybrid autonomy framework that combines reinforcement learning (Proximal-Policy Optimization) with classical multi-robot coordination principles to enable scalable aerial swarm coverage. The system first trains a Proximal Policy Optimization (PPO) agent to perform local navigation and exploration using visual observations derived from vegetation-index field maps. This learned policy is then extended to a multi-agent setting where each drone integrates the PPO action with swarm-level control components including artificial potential fields for attraction–repulsion dynamics and graph-based consensus mechanisms for coordinated dispersion. Role-switching behaviors inspired by chemical reaction networks allow agents to dynamically transition between exploration, surveying, and defensive states, enabling adaptive swarm behavior during coverage tasks. The entire system is simulated on the MicroUAV-2D simulator (check 'Platforms' tab), allowing rapid experimentation with perception-driven aerial autonomy and swarm dynamics. Experiments demonstrate that while single-agent reinforcement learning struggles to scale, the hybrid architecture stabilizes swarm behavior, reduces redundant coverage, and improves spatial exploration efficiency. The framework provides a modular platform for studying the interaction between learned navigation policies and classical swarm coordination strategies in distributed aerial robotics systems.
               </p>
               <div class="project-tags">
                 <span class="project-tag">Swarm Robotics</span>
                 <span class="project-tag">Hybrid Control</span>
                 <span class="project-tag">Consensus Dynamics</span>
+                <span class="project-tag">Multi-Robot Systems</span>
               </div>
               <span class="project-cta">Open Repository</span>
             </div>
@@ -177,7 +171,7 @@
           </a>
 
           <a
-            href="https://github.com/aymisxx/eventreflex-drone-navigation"
+            href="https://github.com/aymisxx/EventReflex-DroneNav"
             target="_blank"
             rel="noopener noreferrer"
             class="project-card"
@@ -207,7 +201,7 @@
           </a>
 
           <a
-            href="https://github.com/aymisxx/first-order-boustrophedon-navigator"
+            href="https://github.com/aymisxx/first_order_boustrophedon_navigator"
             target="_blank"
             rel="noopener noreferrer"
             class="project-card"
@@ -222,10 +216,7 @@
                 <h3 class="project-title">First Order Boustrophedon Navigator</h3>
               </div>
               <p class="project-description">
-                A ROS2-based lawnmower coverage system using first-order motion dynamics and PD control
-                for structured area traversal. The project emphasizes trajectory quality, cross-track
-                error analysis, and quantitative validation of systematic coverage behavior in a
-                robotics simulation workflow.
+                First-Order Boustrophedon Navigator is a coverage path planning framework designed to achieve systematic area coverage using a classical lawnmower-style traversal strategy. The system implements a Boustrophedon motion pattern within a ROS2-based robotics pipeline, enabling structured sweeping of planar environments through alternating linear passes and controlled turning maneuvers. A proportional–derivative (PD) controller regulates lateral deviation from the reference path, minimizing cross-track error while maintaining stable forward motion along each coverage lane. The navigation stack continuously computes path-following corrections based on geometric deviation from the desired sweep trajectory, ensuring consistent spacing between adjacent coverage passes. The architecture integrates real-time telemetry collection and ROS2 topic logging, enabling quantitative evaluation of coverage efficiency, path tracking accuracy, and controller performance during traversal. Through trajectory logging and post-run analysis, the framework computes cross-track error statistics, lane tracking stability, and cumulative coverage metrics across the entire sweep sequence. The result is a reproducible experimental platform for analyzing classical coverage path planning strategies and feedback-based trajectory tracking within modern ROS2 robotic systems.
               </p>
               <div class="project-tags">
                 <span class="project-tag">ROS2</span>

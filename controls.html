@@ -51,8 +51,6 @@
 
 <div class="page-hero-content glass-panel">
 
-<p class="section-tag">CONTROL SYSTEMS</p>
-
 <h1 class="page-title">Controls</h1>
 
 <p class="page-subtitle">
@@ -64,6 +62,7 @@ vehicle dynamics, pursuit guidance, and embedded actuation platforms.
 <span class="page-chip">Classical Control</span>
 <span class="page-chip">LQR</span>
 <span class="page-chip">MPC</span>
+<span class="page-chip">Reinforcement Learning</span>
 <span class="page-chip">Embedded Systems</span>
 </div>
 
@@ -79,7 +78,7 @@ vehicle dynamics, pursuit guidance, and embedded actuation platforms.
 <p>
 This domain focuses on engineering control systems across robotics,
 vehicle dynamics, optimal control, and real-time embedded hardware.
-Projects range from classical regulators to constrained optimization
+These works range from classical regulators to constrained optimization
 controllers used in guidance and stabilization problems.
 </p>
 
@@ -91,7 +90,6 @@ controllers used in guidance and stabilization problems.
 <section class="projects-section">
 
 <div class="section-heading">
-<p class="section-tag">PROJECTS</p>
 <h2>Control Systems Archive</h2>
 <p>Click any panel to open the corresponding GitHub repository.</p>
 </div>
@@ -119,10 +117,7 @@ class="project-card"
 </div>
 
 <p class="project-description">
-A reinforcement learning control study evaluating PPO, DQN with discretized
-actions, and A2C within the CarRacing-v3 environment. The project analyzes
-policy stability, reward convergence, and control behaviour when learning
-driving strategies directly from visual observations.
+DriftCTRL is a control-systems testbed for analyzing vehicle lateral stability under challenging dynamic conditions. Built around the classical linear bicycle model, the platform evaluates multiple steering control strategies including feedforward curvature tracking, Linear Quadratic Regulation (LQR), and Sliding Mode Control (SMC) within a unified simulation framework. The system exposes the full lateral–yaw dynamics pipeline, allowing precise study of yaw-rate tracking, lateral velocity regulation, actuator limits, and robustness under identical road-curvature disturbances. By comparing fundamentally different control philosophies within the same vehicle model, DriftCTRL reveals the trade-offs between smoothness, optimality, and robustness that emerge in high-performance vehicle control systems. The framework emphasizes transparent mathematical modeling and reproducible experimentation, providing quantitative metrics and visual trajectory analysis to characterize controller behavior. As a compact yet rigorous evaluation environment, DriftCTRL serves as a practical platform for exploring advanced automotive control strategies and stability-focused vehicle dynamics research. Its modular architecture allows rapid extension to additional control laws, disturbance models, and vehicle parameters, enabling systematic benchmarking across diverse driving scenarios. The platform therefore functions not only as a controller comparison tool but also as a flexible research environment for studying the dynamics of high-performance vehicle control systems.
 </p>
 
 <div class="project-tags">
@@ -158,11 +153,7 @@ class="project-card"
 </div>
 
 <p class="project-description">
-A vehicle lateral dynamics study using the linear bicycle model.
-The project compares feedforward steering, LQR regulation, and
-Sliding Mode Control under identical road curvature disturbances,
-highlighting the trade-offs between tracking performance,
-control effort, and robustness.
+Vehicle Lateral Stability is a vehicle dynamics analysis framework focused on understanding and controlling lateral–yaw behavior under curvature-driven road disturbances. Built around the classical linear bicycle model, the system investigates how different steering control strategies influence stability, tracking performance, and actuator demands during dynamic cornering scenarios. The platform compares feedforward curvature compensation, Linear Quadratic Regulation (LQR), and Sliding Mode Control (SMC) within a unified simulation environment, enabling systematic evaluation of yaw-rate tracking accuracy, lateral velocity regulation, and control effort under identical driving conditions. By exposing the underlying state-space formulation and vehicle dynamics equations, the framework provides a transparent environment for studying the trade-offs between optimal control performance and robustness to modeling uncertainties. Quantitative performance metrics and trajectory analyses reveal how each controller behaves when subjected to realistic disturbances and actuator limitations. The result is a compact yet rigorous experimental platform for exploring advanced vehicle stability control strategies relevant to autonomous driving and high-performance automotive systems. Its modular simulation design also enables straightforward extension to alternative vehicle models and disturbance profiles for deeper experimentation in automotive control research.
 </p>
 
 <div class="project-tags">
@@ -198,11 +189,7 @@ class="project-card"
 </div>
 
 <p class="project-description">
-A pursuit-evasion interception study comparing a PD baseline
-controller against constrained Model Predictive Control.
-The system models relative interceptor-target dynamics and
-evaluates performance through intercept time, minimum distance,
-control effort, and actuator saturation.
+InterceptDynamics is a pursuit–evasion dynamics and control framework designed to analyze interception strategies between maneuvering agents under constrained control conditions. The system models relative motion between interceptor and target using a continuous-time state-space formulation, enabling rigorous study of guidance and control behavior during high-speed engagement scenarios. Within this framework, classical proportional–derivative (PD) guidance is compared against constrained Model Predictive Control (MPC), allowing systematic evaluation of interception performance under control saturation and actuator slew limits. The MPC formulation solves a finite-horizon quadratic program that optimizes control effort while minimizing intercept error, providing a principled approach to trajectory correction during target maneuvers. Through quantitative metrics such as intercept time, minimum separation distance, and control energy, the platform exposes the performance differences between reactive and optimization-based guidance strategies. The simulation incorporates maneuvering targets with time-varying heading profiles, enabling stress testing of guidance laws under aggressive evasive motion. The result is a transparent experimental environment for studying modern interception control architectures relevant to aerospace guidance, autonomous defense systems, and high-speed pursuit–evasion dynamics.
 </p>
 
 <div class="project-tags">
@@ -234,14 +221,11 @@ class="project-card"
 
 <div class="project-topline">
 <img src="assets/icons/controls.svg" class="project-icon">
-<h3 class="project-title">cart_pole_optimal_control</h3>
+<h3 class="project-title">Pole Balancing via Optimal Control (LQR)</h3>
 </div>
 
 <p class="project-description">
-An LQR controller for stabilizing an inverted cart-pole
-implemented within ROS2 and Gazebo. The project includes
-system linearization, optimal gain computation using the
-Algebraic Riccati Equation, and disturbance rejection tests.
+This wor is a disturbance-aware control framework for stabilizing an inverted pendulum system under external perturbations. The platform models the classical cart-pole dynamics using a continuous-time state-space formulation and applies Linear Quadratic Regulation (LQR) to maintain upright stability while minimizing control effort. By solving the Algebraic Riccati Equation to derive optimal feedback gains, the controller achieves fast stabilization and precise state regulation in the presence of stochastic disturbances injected into the system. The simulation environment integrates ROS2 and Gazebo to provide a realistic closed-loop control pipeline, enabling real-time interaction between the controller, disturbance generator, and visualization modules. Through comparative tuning of Q and R weight matrices, the framework exposes the trade-offs between control aggressiveness, energy expenditure, and robustness to external shocks. The implementation includes continuous-time linearization around the upright equilibrium and evaluates controller performance under randomized disturbance injections that emulate environmental shocks. The result is a transparent experimental platform for studying optimal control strategies and disturbance rejection in nonlinear dynamical systems commonly used as benchmarks in robotics and control theory.
 </p>
 
 <div class="project-tags">
@@ -273,14 +257,11 @@ class="project-card"
 
 <div class="project-topline">
 <img src="assets/icons/controls.svg" class="project-icon">
-<h3 class="project-title">Ultrasonic PID Motor Control</h3>
+<h3 class="project-title">Distance-Regulated Motor Control using PID</h3>
 </div>
 
 <p class="project-description">
-A real-time motor speed control system using an ultrasonic
-sensor as distance reference, encoder feedback for speed
-measurement, and a PID controller deployed via Simulink
-auto-generated Arduino code.
+Distance-Regulated Motor Control using PID is an embedded closed-loop control system that regulates DC motor speed based on real-time distance measurements. The system uses an HC-SR04 ultrasonic sensor to generate a dynamic reference signal while a quadrature encoder provides high-resolution feedback of motor rotational velocity. A Proportional–Integral–Derivative (PID) controller computes the control input by minimizing the error between the distance-derived reference and measured system response, enabling stable regulation of motor dynamics under varying operating conditions. The control architecture is developed using Simulink model-based design, with automatic C code generation deployed to an Arduino-based embedded platform driving the motor through an L298N H-bridge interface. Real-time sensing, feedback acquisition, and actuation are executed within a deterministic control loop, enabling analysis of transient response, steady-state error, and disturbance rejection characteristics. The system provides a compact experimental platform for studying classical feedback control, sensor-driven reference tracking, and embedded implementation of PID-based motor regulation in mechatronic systems.
 </p>
 
 <div class="project-tags">
@@ -300,7 +281,51 @@ auto-generated Arduino code.
 
 </section>
 
-</main>
+      <section class="contact-section" id="contact">
+        <div class="section-heading">
+          <h2>Connect</h2>
+        </div>
+
+        <div class="contact-grid">
+          <a
+            href="https://github.com/aymisxx"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-card glass-panel"
+            aria-label="Open GitHub profile"
+          >
+            <img src="assets/icons/github.svg" alt="" class="contact-icon" />
+            <div>
+              <h3>GitHub</h3>
+            </div>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/aymisxx"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-card glass-panel"
+            aria-label="Open LinkedIn profile"
+          >
+            <img src="assets/icons/linkedin.svg" alt="" class="contact-icon" />
+            <div>
+              <h3>LinkedIn</h3>
+            </div>
+          </a>
+
+          <a
+            href="mailto:aymisxx@proton.me"
+            class="contact-card glass-panel"
+            aria-label="Send email to Ayushman Mishra"
+          >
+            <img src="assets/icons/email.svg" alt="" class="contact-icon" />
+            <div>
+              <h3>Email</h3>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
 
 
 <footer class="footer">

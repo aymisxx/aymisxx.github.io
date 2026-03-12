@@ -51,10 +51,9 @@
     <main>
       <section class="page-hero">
         <div class="page-hero-content glass-panel">
-          <p class="section-tag">MACHINE LEARNING</p>
           <h1 class="page-title">Machine Learning</h1>
           <p class="page-subtitle">
-            Learning-based systems spanning reinforcement learning, generative modeling,
+            Learning-based systems spanning RL, generative modeling,
             anomaly detection, representation learning, and theory-grounded AI for robotics
             and engineering applications.
           </p>
@@ -63,7 +62,6 @@
             <span class="page-chip">Deep Learning</span>
             <span class="page-chip">Reinforcement Learning</span>
             <span class="page-chip">Generative Models</span>
-            <span class="page-chip">Representation Learning</span>
             <span class="page-chip">Safety-Critical AI</span>
           </div>
         </div>
@@ -74,7 +72,7 @@
           <p>
             This domain brings together machine learning projects ranging from generative
             vision systems and reinforcement learning to anomaly detection and neural
-            architecture studies. Each project is presented as a standalone engineering
+            architecture studies. Each work is presented as a standalone engineering
             artifact with its own visual identity, descriptive summary, and repository link.
           </p>
         </div>
@@ -82,7 +80,6 @@
 
       <section class="projects-section" id="projects">
         <div class="section-heading">
-          <p class="section-tag">PROJECTS</p>
           <h2>Machine Learning Archive</h2>
           <p>Click any panel to open the corresponding GitHub repository.</p>
         </div>
@@ -104,11 +101,7 @@
                 <h3 class="project-title">DriftCTRL</h3>
               </div>
               <p class="project-description">
-                A reinforcement learning project evaluating PPO, DQN with custom discretization,
-                and A2C on the CarRacing-v3 environment. The study focuses on continuous versus
-                discrete control, pixel-based visual input, training stability, reward evolution,
-                and qualitative driving behavior, showing stable convergence for PPO while exposing
-                the limitations of discretized and weakly convergent baselines.
+                DriftCTRL is a control-systems testbed for analyzing vehicle lateral stability under challenging dynamic conditions. Built around the classical linear bicycle model, the platform evaluates multiple steering control strategies including feedforward curvature tracking, Linear Quadratic Regulation (LQR), and Sliding Mode Control (SMC) within a unified simulation framework. The system exposes the full lateral–yaw dynamics pipeline, allowing precise study of yaw-rate tracking, lateral velocity regulation, actuator limits, and robustness under identical road-curvature disturbances. By comparing fundamentally different control philosophies within the same vehicle model, DriftCTRL reveals the trade-offs between smoothness, optimality, and robustness that emerge in high-performance vehicle control systems. The framework emphasizes transparent mathematical modeling and reproducible experimentation, providing quantitative metrics and visual trajectory analysis to characterize controller behavior. As a compact yet rigorous evaluation environment, DriftCTRL serves as a practical platform for exploring advanced automotive control strategies and stability-focused vehicle dynamics research. Its modular architecture allows rapid extension to additional control laws, disturbance models, and vehicle parameters, enabling systematic benchmarking across diverse driving scenarios. The platform therefore functions not only as a controller comparison tool but also as a flexible research environment for studying the dynamics of high-performance vehicle control systems.
               </p>
               <div class="project-tags">
                 <span class="project-tag">PPO / DQN / A2C</span>
@@ -135,12 +128,7 @@
                 <h3 class="project-title">Label Conditioned Robot Vision</h3>
               </div>
               <p class="project-description">
-                A robotics-oriented generative vision study using conditional GANs to model
-                semantic-controllable image synthesis. Framed as label or text conditioned
-                generation for perception analysis, the project examines controllability,
-                training stability, dataset scalability, and robotics-relevant failure modes
-                across MNIST, Oxford-102 Flowers, and CUB-200 Birds rather than chasing
-                photorealism for its own sake.
+                Label-Conditioned Robot Vision is a generative perception framework that explores how semantic labels can act as controllable priors for visual scene synthesis in robotic perception systems. Built around conditional Generative Adversarial Networks (cGANs), the system learns to generate images conditioned on symbolic labels, enabling structured control over visual content while preserving the statistical properties of real-world datasets. The framework progressively evaluates this capability across increasing visual complexity, from simple handwritten digits to fine-grained natural categories such as flowers and birds, exposing how conditional generation scales with semantic richness. Beyond image synthesis itself, the project investigates controllability, training stability, and dataset-driven failure modes that emerge when generative models are guided by semantic constraints. By framing label conditioning as a perception primitive rather than a purely artistic generator, the system demonstrates how generative models can support robotics tasks such as synthetic dataset augmentation, semantic grounding, and perception robustness testing. The result is a modular experimental platform for studying controllable visual generation and its role in next-generation robot perception pipelines. This capability enables creation of semantically structured visual data, helping accelerate the development and evaluation of perception algorithms in data-constrained robotic environments.
               </p>
               <div class="project-tags">
                 <span class="project-tag">cGANs</span>
@@ -195,14 +183,10 @@
             <div class="project-content">
               <div class="project-topline">
                 <img src="assets/icons/ml.svg" alt="" class="project-icon" />
-                <h3 class="project-title">ProphetLSTM GAN</h3>
+                <h3 class="project-title">ProphetLSTM-GAN</h3>
               </div>
               <p class="project-description">
-                An unsupervised anomaly detection framework for liquid rocket engine telemetry
-                built around a hybrid LSTM-GAN design. The system combines reconstruction error,
-                discriminator response, and trend-aware residual scoring to detect anomalies
-                early, benchmark against traditional baselines, and study detection latency in
-                a safety-critical engineering context where false calm can be expensive.
+                ProphetLSTM-GAN is a hybrid anomaly detection framework designed for early fault identification in complex telemetry streams from safety-critical systems such as liquid rocket engines. The architecture combines temporal sequence modeling with adversarial learning, integrating an LSTM-based generator with a discriminator network to model the normal behavior of multivariate time-series signals. By learning the statistical structure of nominal engine telemetry, the system detects deviations through a composite anomaly score that blends reconstruction error, discriminator confidence, and trend residuals inspired by Prophet-style time-series decomposition. This multi-signal scoring mechanism enables the framework to identify subtle precursors to abnormal behavior before conventional threshold-based monitoring systems trigger alerts. The platform is designed for rigorous evaluation against traditional baselines including redline threshold monitoring, classical machine learning detectors, and LSTM autoencoder approaches. Through its hybrid modeling strategy, ProphetLSTM-GAN demonstrates how deep generative architectures can enhance early anomaly detection and reliability monitoring in mission-critical aerospace systems. Such predictive monitoring capability is essential for improving operational safety and enabling proactive maintenance strategies in high-risk propulsion environments.
               </p>
               <div class="project-tags">
                 <span class="project-tag">Anomaly Detection</span>
@@ -217,7 +201,6 @@
 
       <section class="contact-section" id="contact">
         <div class="section-heading">
-          <p class="section-tag">CONTACT NODE</p>
           <h2>Connect</h2>
         </div>
 
