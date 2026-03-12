@@ -4,9 +4,7 @@
 
 Focused on **autonomous systems, control theory, reinforcement learning, and robotic perception**.
 
-🌐 **Live (To Be) Website:** https://aymisxx.github.io
-
----
+# 🌐 **Live Website:** https://aymisxx.github.io
 
 I design and build systems involving:
 
@@ -15,8 +13,6 @@ I design and build systems involving:
 - Robot perception.
 - Autonomous navigation.
 - Simulation environments.
-
----
 
 # Contact
 
