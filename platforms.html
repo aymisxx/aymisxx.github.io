@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Platforms | Ayushman Mishra</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;800&family=Rajdhani:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="platforms-page">
+  <div class="site-bg-orb orb-1"></div>
+  <div class="site-bg-orb orb-2"></div>
+  <div class="site-bg-orb orb-3"></div>
+
+  <div class="page-shell">
+    <header class="topbar" id="top">
+      <a href="index.html" class="brand" aria-label="Go to homepage">
+        <img src="assets/icons/home.svg" alt="" class="brand-icon" />
+        <span>aymisxx.github.io</span>
+      </a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu" id="primary-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="autonomy.html">Autonomy</a>
+        <a href="controls.html">Controls</a>
+        <a href="ml.html">Machine Learning</a>
+        <a href="perception.html">Perception</a>
+        <a href="platforms.html" class="active">Platforms</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="page-hero-content glass-panel">
+          <p class="section-tag">PLATFORMS & TOOLS</p>
+          <h1 class="page-title">Platforms</h1>
+          <p class="page-subtitle">
+            Lightweight simulation infrastructure, reusable robotics tooling,
+            and platform-oriented systems designed for rapid experimentation,
+            autonomy prototyping, and clean engineering workflows.
+          </p>
+
+          <div class="page-meta">
+            <span class="page-chip">Simulation</span>
+            <span class="page-chip">Tooling</span>
+            <span class="page-chip">Rapid Prototyping</span>
+            <span class="page-chip">Robotics Infrastructure</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-intro-section">
+        <div class="page-intro-panel glass-panel">
+          <p>
+            This domain focuses on the platforms that make experimentation possible:
+            lightweight simulators, reusable environments, and engineering tools that
+            support fast iteration without dragging in unnecessary bulk. These projects
+            are built to be practical foundations for autonomy, control, and perception work.
+          </p>
+        </div>
+      </section>
+
+      <section class="projects-section" id="projects">
+        <div class="section-heading">
+          <p class="section-tag">PROJECTS</p>
+          <h2>Platform Systems Archive</h2>
+          <p>Click any panel to open the corresponding GitHub repository.</p>
+        </div>
+
+        <div class="projects-grid">
+          <a
+            href="https://github.com/aymisxx/MicroUAV-2D"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-card"
+            aria-label="Open MicroUAV-2D repository"
+          >
+            <div class="project-image-wrap">
+              <img src="assets/projects/microuav-2d.png" alt="MicroUAV-2D project artwork" />
+            </div>
+            <div class="project-content">
+              <div class="project-topline">
+                <img src="assets/icons/platforms.svg" alt="" class="project-icon" />
+                <h3 class="project-title">MicroUAV-2D</h3>
+              </div>
+              <p class="project-description">
+                An open-source ultra-lightweight 2D down-camera UAV simulation environment
+                built for rapid movement-logic prototyping at fixed height. The platform
+                provides discrete XY motion, clean field-of-view extraction, stable border
+                handling, and a sharp separation between simulator core and autonomy logic,
+                making it ideal for plug-and-play robotics experimentation without heavyweight dependencies.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">UAV Simulator</span>
+                <span class="project-tag">Lightweight Framework</span>
+                <span class="project-tag">Rapid Prototyping</span>
+              </div>
+              <span class="project-cta">Open Repository</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="section-heading">
+          <p class="section-tag">CONTACT NODE</p>
+          <h2>Connect</h2>
+        </div>
+
+        <div class="contact-grid">
+          <a
+            href="https://github.com/aymisxx"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-card glass-panel"
+            aria-label="Open GitHub profile"
+          >
+            <img src="assets/icons/github.svg" alt="" class="contact-icon" />
+            <div>
+              <h3>GitHub</h3>
+            </div>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/aymisxx"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-card glass-panel"
+            aria-label="Open LinkedIn profile"
+          >
+            <img src="assets/icons/linkedin.svg" alt="" class="contact-icon" />
+            <div>
+              <h3>LinkedIn</h3>
+            </div>
+          </a>
+
+          <a
+            href="mailto:aymisxx@proton.me"
+            class="contact-card glass-panel"
+            aria-label="Send email to Ayushman Mishra"
+          >
+            <img src="assets/icons/email.svg" alt="" class="contact-icon" />
+            <div>
+              <h3>Email</h3>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Sovereignty. Singularity. Control.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>

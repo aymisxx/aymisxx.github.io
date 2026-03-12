@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Controls | Ayushman Mishra</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;800&family=Rajdhani:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body class="controls-page">
+
+<div class="site-bg-orb orb-1"></div>
+<div class="site-bg-orb orb-2"></div>
+<div class="site-bg-orb orb-3"></div>
+
+<div class="page-shell">
+
+<header class="topbar" id="top">
+
+<a href="index.html" class="brand">
+<img src="assets/icons/home.svg" class="brand-icon">
+<span>aymisxx.github.io</span>
+</a>
+
+<button class="nav-toggle">
+<span></span>
+<span></span>
+<span></span>
+</button>
+
+<nav class="nav-menu">
+<a href="index.html">Home</a>
+<a href="autonomy.html">Autonomy</a>
+<a href="controls.html" class="active">Controls</a>
+<a href="ml.html">Machine Learning</a>
+<a href="perception.html">Perception</a>
+<a href="platforms.html">Platforms</a>
+</nav>
+
+</header>
+
+
+<main>
+
+<section class="page-hero">
+
+<div class="page-hero-content glass-panel">
+
+<p class="section-tag">CONTROL SYSTEMS</p>
+
+<h1 class="page-title">Controls</h1>
+
+<p class="page-subtitle">
+Classical, optimal, and constrained control systems designed for robotics,
+vehicle dynamics, pursuit guidance, and embedded actuation platforms.
+</p>
+
+<div class="page-meta">
+<span class="page-chip">Classical Control</span>
+<span class="page-chip">LQR</span>
+<span class="page-chip">MPC</span>
+<span class="page-chip">Embedded Systems</span>
+</div>
+
+</div>
+
+</section>
+
+
+<section class="page-intro-section">
+
+<div class="page-intro-panel glass-panel">
+
+<p>
+This domain focuses on engineering control systems across robotics,
+vehicle dynamics, optimal control, and real-time embedded hardware.
+Projects range from classical regulators to constrained optimization
+controllers used in guidance and stabilization problems.
+</p>
+
+</div>
+
+</section>
+
+
+<section class="projects-section">
+
+<div class="section-heading">
+<p class="section-tag">PROJECTS</p>
+<h2>Control Systems Archive</h2>
+<p>Click any panel to open the corresponding GitHub repository.</p>
+</div>
+
+
+<div class="projects-grid">
+
+<!-- DriftCTRL -->
+
+<a
+href="https://github.com/aymisxx/DriftCTRL"
+target="_blank"
+class="project-card"
+>
+
+<div class="project-image-wrap">
+<img src="assets/projects/driftctrl.png">
+</div>
+
+<div class="project-content">
+
+<div class="project-topline">
+<img src="assets/icons/controls.svg" class="project-icon">
+<h3 class="project-title">DriftCTRL</h3>
+</div>
+
+<p class="project-description">
+A reinforcement learning control study evaluating PPO, DQN with discretized
+actions, and A2C within the CarRacing-v3 environment. The project analyzes
+policy stability, reward convergence, and control behaviour when learning
+driving strategies directly from visual observations.
+</p>
+
+<div class="project-tags">
+<span class="project-tag">Reinforcement Learning</span>
+<span class="project-tag">Control Policy</span>
+<span class="project-tag">PPO / DQN / A2C</span>
+</div>
+
+<span class="project-cta">Open Repository</span>
+
+</div>
+
+</a>
+
+
+<!-- VehicleLateralStability -->
+
+<a
+href="https://github.com/aymisxx/VehicleLateralStability-Py"
+target="_blank"
+class="project-card"
+>
+
+<div class="project-image-wrap">
+<img src="assets/projects/vehiclelateralstability-py.png">
+</div>
+
+<div class="project-content">
+
+<div class="project-topline">
+<img src="assets/icons/controls.svg" class="project-icon">
+<h3 class="project-title">VehicleLateralStability-Py</h3>
+</div>
+
+<p class="project-description">
+A vehicle lateral dynamics study using the linear bicycle model.
+The project compares feedforward steering, LQR regulation, and
+Sliding Mode Control under identical road curvature disturbances,
+highlighting the trade-offs between tracking performance,
+control effort, and robustness.
+</p>
+
+<div class="project-tags">
+<span class="project-tag">LQR</span>
+<span class="project-tag">Sliding Mode Control</span>
+<span class="project-tag">Vehicle Dynamics</span>
+</div>
+
+<span class="project-cta">Open Repository</span>
+
+</div>
+
+</a>
+
+
+<!-- InterceptDynamics -->
+
+<a
+href="https://github.com/aymisxx/InterceptDynamics-Py"
+target="_blank"
+class="project-card"
+>
+
+<div class="project-image-wrap">
+<img src="assets/projects/interceptdynamics-py.png">
+</div>
+
+<div class="project-content">
+
+<div class="project-topline">
+<img src="assets/icons/controls.svg" class="project-icon">
+<h3 class="project-title">InterceptDynamics-Py</h3>
+</div>
+
+<p class="project-description">
+A pursuit-evasion interception study comparing a PD baseline
+controller against constrained Model Predictive Control.
+The system models relative interceptor-target dynamics and
+evaluates performance through intercept time, minimum distance,
+control effort, and actuator saturation.
+</p>
+
+<div class="project-tags">
+<span class="project-tag">PD Control</span>
+<span class="project-tag">Model Predictive Control</span>
+<span class="project-tag">Guidance Dynamics</span>
+</div>
+
+<span class="project-cta">Open Repository</span>
+
+</div>
+
+</a>
+
+
+<!-- Cart Pole -->
+
+<a
+href="https://github.com/aymisxx/cart_pole_optimal_control"
+target="_blank"
+class="project-card"
+>
+
+<div class="project-image-wrap">
+<img src="assets/projects/cart-pole-optimal-control.png">
+</div>
+
+<div class="project-content">
+
+<div class="project-topline">
+<img src="assets/icons/controls.svg" class="project-icon">
+<h3 class="project-title">cart_pole_optimal_control</h3>
+</div>
+
+<p class="project-description">
+An LQR controller for stabilizing an inverted cart-pole
+implemented within ROS2 and Gazebo. The project includes
+system linearization, optimal gain computation using the
+Algebraic Riccati Equation, and disturbance rejection tests.
+</p>
+
+<div class="project-tags">
+<span class="project-tag">LQR</span>
+<span class="project-tag">ROS2</span>
+<span class="project-tag">Gazebo Simulation</span>
+</div>
+
+<span class="project-cta">Open Repository</span>
+
+</div>
+
+</a>
+
+
+<!-- Ultrasonic PID -->
+
+<a
+href="https://github.com/aymisxx/Ultrasonic-PID-Motor-Control"
+target="_blank"
+class="project-card"
+>
+
+<div class="project-image-wrap">
+<img src="assets/projects/ultrasonic-pid-motor-control.png">
+</div>
+
+<div class="project-content">
+
+<div class="project-topline">
+<img src="assets/icons/controls.svg" class="project-icon">
+<h3 class="project-title">Ultrasonic PID Motor Control</h3>
+</div>
+
+<p class="project-description">
+A real-time motor speed control system using an ultrasonic
+sensor as distance reference, encoder feedback for speed
+measurement, and a PID controller deployed via Simulink
+auto-generated Arduino code.
+</p>
+
+<div class="project-tags">
+<span class="project-tag">PID Control</span>
+<span class="project-tag">Arduino</span>
+<span class="project-tag">Embedded Control</span>
+</div>
+
+<span class="project-cta">Open Repository</span>
+
+</div>
+
+</a>
+
+
+</div>
+
+</section>
+
+</main>
+
+
+<footer class="footer">
+<p>Sovereignty. Singularity. Control.</p>
+</footer>
+
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>

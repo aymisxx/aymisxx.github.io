@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Machine Learning | Ayushman Mishra</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;800&family=Rajdhani:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body class="ml-page">
+  <div class="site-bg-orb orb-1"></div>
+  <div class="site-bg-orb orb-2"></div>
+  <div class="site-bg-orb orb-3"></div>
+
+  <div class="page-shell">
+    <header class="topbar" id="top">
+      <a href="index.html" class="brand" aria-label="Go to homepage">
+        <img src="assets/icons/home.svg" alt="" class="brand-icon" />
+        <span>aymisxx.github.io</span>
+      </a>
+
+      <button
+        class="nav-toggle"
+        type="button"
+        aria-label="Toggle navigation"
+        aria-expanded="false"
+        aria-controls="primary-nav"
+      >
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class="nav-menu" id="primary-nav" aria-label="Primary navigation">
+        <a href="index.html">Home</a>
+        <a href="autonomy.html">Autonomy</a>
+        <a href="controls.html">Controls</a>
+        <a href="ml.html" class="active">Machine Learning</a>
+        <a href="perception.html">Perception</a>
+        <a href="platforms.html">Platforms</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="page-hero">
+        <div class="page-hero-content glass-panel">
+          <p class="section-tag">MACHINE LEARNING</p>
+          <h1 class="page-title">Machine Learning</h1>
+          <p class="page-subtitle">
+            Learning-based systems spanning reinforcement learning, generative modeling,
+            anomaly detection, representation learning, and theory-grounded AI for robotics
+            and engineering applications.
+          </p>
+
+          <div class="page-meta">
+            <span class="page-chip">Deep Learning</span>
+            <span class="page-chip">Reinforcement Learning</span>
+            <span class="page-chip">Generative Models</span>
+            <span class="page-chip">Representation Learning</span>
+            <span class="page-chip">Safety-Critical AI</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="page-intro-section">
+        <div class="page-intro-panel glass-panel">
+          <p>
+            This domain brings together machine learning projects ranging from generative
+            vision systems and reinforcement learning to anomaly detection and neural
+            architecture studies. Each project is presented as a standalone engineering
+            artifact with its own visual identity, descriptive summary, and repository link.
+          </p>
+        </div>
+      </section>
+
+      <section class="projects-section" id="projects">
+        <div class="section-heading">
+          <p class="section-tag">PROJECTS</p>
+          <h2>Machine Learning Archive</h2>
+          <p>Click any panel to open the corresponding GitHub repository.</p>
+        </div>
+
+        <div class="projects-grid">
+          <a
+            href="https://github.com/aymisxx/DriftCTRL"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-card"
+            aria-label="Open DriftCTRL repository"
+          >
+            <div class="project-image-wrap">
+              <img src="assets/projects/driftctrl.png" alt="DriftCTRL project artwork" />
+            </div>
+            <div class="project-content">
+              <div class="project-topline">
+                <img src="assets/icons/ml.svg" alt="" class="project-icon" />
+                <h3 class="project-title">DriftCTRL</h3>
+              </div>
+              <p class="project-description">
+                A reinforcement learning project evaluating PPO, DQN with custom discretization,
+                and A2C on the CarRacing-v3 environment. The study focuses on continuous versus
+                discrete control, pixel-based visual input, training stability, reward evolution,
+                and qualitative driving behavior, showing stable convergence for PPO while exposing
+                the limitations of discretized and weakly convergent baselines.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">PPO / DQN / A2C</span>
+                <span class="project-tag">Visual RL</span>
+                <span class="project-tag">Control Learning</span>
+              </div>
+              <span class="project-cta">Open Repository</span>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/aymisxx/Label-Conditioned-Robot-Vision"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-card"
+            aria-label="Open Label Conditioned Robot Vision repository"
+          >
+            <div class="project-image-wrap">
+              <img src="assets/projects/label-conditioned-robot-vision-cgan.png" alt="Label Conditioned Robot Vision project artwork" />
+            </div>
+            <div class="project-content">
+              <div class="project-topline">
+                <img src="assets/icons/ml.svg" alt="" class="project-icon" />
+                <h3 class="project-title">Label Conditioned Robot Vision</h3>
+              </div>
+              <p class="project-description">
+                A robotics-oriented generative vision study using conditional GANs to model
+                semantic-controllable image synthesis. Framed as label or text conditioned
+                generation for perception analysis, the project examines controllability,
+                training stability, dataset scalability, and robotics-relevant failure modes
+                across MNIST, Oxford-102 Flowers, and CUB-200 Birds rather than chasing
+                photorealism for its own sake.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">cGANs</span>
+                <span class="project-tag">Generative Vision</span>
+                <span class="project-tag">Semantic Conditioning</span>
+              </div>
+              <span class="project-cta">Open Repository</span>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/aymisxx/Perceiver-Architecture-Study"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-card"
+            aria-label="Open Perceiver Architecture Study repository"
+          >
+            <div class="project-image-wrap">
+              <img src="assets/projects/perceiver-architecture-study.png" alt="Perceiver Architecture Study project artwork" />
+            </div>
+            <div class="project-content">
+              <div class="project-topline">
+                <img src="assets/icons/ml.svg" alt="" class="project-icon" />
+                <h3 class="project-title">Perceiver Architecture Study</h3>
+              </div>
+              <p class="project-description">
+                A minimal PyTorch reimplementation of the Perceiver architecture, centered on
+                Fourier positional encodings, cross-attention from inputs into a learned latent
+                bottleneck, and a latent Transformer stack. The project emphasizes clarity,
+                architectural intuition, and reproducible training behavior on CIFAR-10 rather
+                than brute-force scale, making the model anatomy easy to inspect and reason about.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Transformers</span>
+                <span class="project-tag">PyTorch</span>
+                <span class="project-tag">Architecture Study</span>
+              </div>
+              <span class="project-cta">Open Repository</span>
+            </div>
+          </a>
+
+          <a
+            href="https://github.com/aymisxx/ProphetLSTM-GAN"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="project-card"
+            aria-label="Open ProphetLSTM GAN repository"
+          >
+            <div class="project-image-wrap">
+              <img src="assets/projects/prophetlstm-gan.png" alt="ProphetLSTM GAN project artwork" />
+            </div>
+            <div class="project-content">
+              <div class="project-topline">
+                <img src="assets/icons/ml.svg" alt="" class="project-icon" />
+                <h3 class="project-title">ProphetLSTM GAN</h3>
+              </div>
+              <p class="project-description">
+                An unsupervised anomaly detection framework for liquid rocket engine telemetry
+                built around a hybrid LSTM-GAN design. The system combines reconstruction error,
+                discriminator response, and trend-aware residual scoring to detect anomalies
+                early, benchmark against traditional baselines, and study detection latency in
+                a safety-critical engineering context where false calm can be expensive.
+              </p>
+              <div class="project-tags">
+                <span class="project-tag">Anomaly Detection</span>
+                <span class="project-tag">LSTM-GAN</span>
+                <span class="project-tag">Telemetry AI</span>
+              </div>
+              <span class="project-cta">Open Repository</span>
+            </div>
+          </a>
+        </div>
+      </section>
+
+      <section class="contact-section" id="contact">
+        <div class="section-heading">
+          <p class="section-tag">CONTACT NODE</p>
+          <h2>Connect</h2>
+        </div>
+
+        <div class="contact-grid">
+          <a
+            href="https://github.com/aymisxx"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-card glass-panel"
+            aria-label="Open GitHub profile"
+          >
+            <img src="assets/icons/github.svg" alt="" class="contact-icon" />
+            <div>
+              <h3>GitHub</h3>
+            </div>
+          </a>
+
+          <a
+            href="https://www.linkedin.com/in/aymisxx"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="contact-card glass-panel"
+            aria-label="Open LinkedIn profile"
+          >
+            <img src="assets/icons/linkedin.svg" alt="" class="contact-icon" />
+            <div>
+              <h3>LinkedIn</h3>
+            </div>
+          </a>
+
+          <a
+            href="mailto:aymisxx@proton.me"
+            class="contact-card glass-panel"
+            aria-label="Send email to Ayushman Mishra"
+          >
+            <img src="assets/icons/email.svg" alt="" class="contact-icon" />
+            <div>
+              <h3>Email</h3>
+            </div>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>Sovereignty. Singularity. Control.</p>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
