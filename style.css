@@ -1,7 +1,7 @@
 :root {
-  --bg-top: #0e0a24;
-  --bg-mid: #0e0a24;
-  --bg-deep: #0e0a24;
+  --bg-top: #a983ff;
+  --bg-mid: #7c5de6;
+  --bg-deep: #3c2fa3;
   --bg-night: #0e0a24;
 
   --panel-bg: rgba(255, 255, 255, 0.12);
@@ -45,11 +45,7 @@ body {
   overflow-x: hidden;
   color: var(--text-main);
   font-family: "Rajdhani", sans-serif;
-  background:
-    radial-gradient(circle at 15% 12%, rgba(255, 255, 255, 0.34), transparent 16%),
-    radial-gradient(circle at 83% 15%, rgba(255, 115, 220, 0.18), transparent 18%),
-    radial-gradient(circle at 75% 72%, rgba(120, 236, 255, 0.16), transparent 18%),
-    linear-gradient(180deg, var(--bg-top) 0%, var(--bg-mid) 30%, var(--bg-deep) 70%, var(--bg-night) 100%);
+  background: #0e0a24;
   position: relative;
 }
 
