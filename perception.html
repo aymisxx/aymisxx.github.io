@@ -88,37 +88,62 @@
         <div class="projects-grid">
 
 <a
-            href="https://github.com/aymisxx/reflect-aug-seg"
-            target="_blank"
-            class="project-card"
-          >
+  href="https://github.com/aymisxx/reflect-aug-seg"
+  target="_blank"
+  class="project-card"
+>
 
-            <div class="project-image-wrap">
-              <img src="assets/projects/reflect-aug-seg.png">
-            </div>
+  <div class="project-image-wrap">
+    <img src="assets/projects/reflect-aug-seg.png">
+  </div>
 
-            <div class="project-content">
+  <div class="project-content">
 
-              <div class="project-topline">
-                <img src="assets/icons/perception.svg" class="project-icon">
-                <h3 class="project-title">Reflectivity-Augmented LiDAR Scene Understanding for Robotic Perception</h3>
-              </div>
+    <div class="project-topline">
+      <img src="assets/icons/perception.svg" class="project-icon">
+      <h3 class="project-title">
+        Reflectivity-Augmented LiDAR Scene Understanding for Robotic Perception
+      </h3>
+    </div>
 
-              <p class="project-description">
-                Reflect-Aug-Seg is a LiDAR perception research framework that investigates whether reflectivity-style augmentation of raw intensity can improve semantic scene understanding for robotic perception systems. The project is built around the observation that raw LiDAR intensity is not a pure surface descriptor, but is entangled with geometric effects such as sensor range and measurement conditions. To study this in a disciplined and interpretable way, the framework introduces a lightweight pseudo-reflectivity signal derived from intensity and point-wise range, and evaluates how that transformed cue behaves across single-frame analysis, short-horizon motion windows, and semantic class structure. Rather than claiming full physical reflectivity recovery, the system treats reflectivity-aware reasoning as a practical perception problem and examines whether the augmented signal reveals clearer structure than intensity alone. The project combines SemanticKITTI-based analysis, class-wise signal interpretation, temporal consistency studies, and visualization-driven evaluation to assess whether this additional cue remains stable and semantically meaningful through motion. The result is a modular perception study that explores how reflectivity-inspired signal augmentation can support more robust LiDAR scene understanding in autonomous robotic systems.
-              </p>
+    <p class="project-description">
+      Reflect-Aug-Seg studies whether a simple reflectivity-style transformation
+of raw LiDAR intensity can expose more structured and stable behavior for
+semantic scene understanding. The core issue is that raw intensity is not
+a clean surface descriptor, but is entangled with range, geometry, and
+sensing conditions, limiting its direct semantic use in practice.
 
-              <div class="project-tags">
-                <span class="project-tag">LiDAR Perception</span>
-                <span class="project-tag">Reflectivity Augmentation</span>
-                <span class="project-tag">Semantic Analysis</span>
-              </div>
+Instead of attempting full reflectivity recovery, the framework introduces
+a lightweight pseudo-reflectivity signal from intensity and range, treated
+as a controlled transformation. The goal is not physical recovery, but to
+test whether this signal behaves more consistently than intensity across
+semantic structure and short-horizon motion windows.
 
-              <span class="project-cta">Open Repository</span>
+The evaluation is deliberately scoped. Using SemanticKITTI, the system
+analyzes class-wise distributions, separability, and temporal stability
+across small motion windows, supported by visualization and statistical
+inspection. The focus is on signal behavior, not on training a full model
+or claiming end-to-end performance gains.
 
-            </div>
+This work is positioned as a perception analysis study, not a complete
+system. It does not claim calibrated reflectivity or universal improvement.
+Instead, it establishes whether reflectivity-inspired augmentation provides
+a measurable but limited structural advantage over raw intensity, and where
+that advantage holds or breaks down across scenarios. The result is a modular,
+interpretable pipeline for studying reflectivity-aware cues in LiDAR perception.
+    </p>
 
-          </a>
+    <div class="project-tags">
+      <span class="project-tag">LiDAR Perception</span>
+      <span class="project-tag">Reflectivity Augmentation</span>
+      <span class="project-tag">Semantic Analysis</span>
+    </div>
+
+    <span class="project-cta">Open Repository</span>
+
+  </div>
+
+</a>
 
           <a
             href="https://github.com/aymisxx/vlmaps-reimplementation"

@@ -113,32 +113,67 @@
           </a>
 
           <a
-            href="https://github.com/aymisxx/ppo-driven-swarm-control"
-            target="_blank"
-            rel="noopener noreferrer"
-            class="project-card"
-            aria-label="Open PPO Driven Swarm Control repository"
-          >
-            <div class="project-image-wrap">
-              <img src="assets/projects/ppo-driven-swarm-control.png" alt="PPO Driven Swarm Control project artwork" />
-            </div>
-            <div class="project-content">
-              <div class="project-topline">
-                <img src="assets/icons/autonomy.svg" alt="" class="project-icon" />
-                <h3 class="project-title">PPO-driven Swarm Control</h3>
-              </div>
-              <p class="project-description">
-                PPO-Driven Swarm Control is a hybrid autonomy framework that combines reinforcement learning (Proximal-Policy Optimization) with classical multi-robot coordination principles to enable scalable aerial swarm coverage. The system first trains a Proximal Policy Optimization (PPO) agent to perform local navigation and exploration using visual observations derived from vegetation-index field maps. This learned policy is then extended to a multi-agent setting where each drone integrates the PPO action with swarm-level control components including artificial potential fields for attraction–repulsion dynamics and graph-based consensus mechanisms for coordinated dispersion. Role-switching behaviors inspired by chemical reaction networks allow agents to dynamically transition between exploration, surveying, and defensive states, enabling adaptive swarm behavior during coverage tasks. The entire system is simulated on the MicroUAV-2D simulator (check 'Platforms' tab), allowing rapid experimentation with perception-driven aerial autonomy and swarm dynamics. Experiments demonstrate that while single-agent reinforcement learning struggles to scale, the hybrid architecture stabilizes swarm behavior, reduces redundant coverage, and improves spatial exploration efficiency. The framework provides a modular platform for studying the interaction between learned navigation policies and classical swarm coordination strategies in distributed aerial robotics systems.
-              </p>
-              <div class="project-tags">
-                <span class="project-tag">Swarm Robotics</span>
-                <span class="project-tag">Hybrid Control</span>
-                <span class="project-tag">Consensus Dynamics</span>
-                <span class="project-tag">Multi-Robot Systems</span>
-              </div>
-              <span class="project-cta">Open Repository</span>
-            </div>
-          </a>
+  href="https://github.com/aymisxx/ppo-driven-swarm-control"
+  target="_blank"
+  class="project-card"
+>
+
+  <div class="project-image-wrap">
+    <img src="assets/projects/ppo-driven-swarm-control.png">
+  </div>
+
+  <div class="project-content">
+
+    <div class="project-topline">
+      <img src="assets/icons/autonomy.svg" class="project-icon">
+      <h3 class="project-title">
+        PPO-driven Swarm Control
+      </h3>
+    </div>
+
+    <p class="project-description">
+      PPO-driven Swarm Control studies whether a learned local navigation policy
+can be lifted into a coherent multi-agent system when combined with classical
+coordination mechanisms. The central issue is that a PPO policy trained on
+local observations can learn useful directional behavior, but naive replication
+across agents does not produce a valid swarm controller, leading to
+clustering, redundant coverage, and unsafe proximity.
+
+Rather than treating reinforcement learning as a complete solution, the
+framework introduces a hybrid controller in which PPO acts as a local
+navigation primitive while classical multi-robot components impose structure.
+The system combines learned actions with artificial potential fields for
+spacing and field shaping, and a graph-based consensus layer for directional
+coherence, forming a controlled composition rather than an end-to-end policy.
+
+The evaluation is deliberately structured and analysis-driven. Starting from
+a single-agent PPO baseline, the work incrementally introduces repulsion and
+consensus layers, comparing their effects on coverage, safety, and spatial
+organization under identical conditions. The focus is on how each component
+reshapes behavior, not on claiming universal performance gains.
+
+This work is therefore positioned as a hybrid swarm-control analysis study,
+not a fully trained multi-agent RL system. It does not claim global convergence
+or optimality. Instead, it establishes that combining learned local policies
+with classical coordination produces measurable improvements in safety and
+coherence, and identifies conditions under which each layer contributes.
+The result is a modular, interpretable framework for studying multi-robot
+coverage through controlled hybridization.
+    </p>
+
+    <div class="project-tags">
+      <span class="project-tag">Swarm Robotics</span>
+      <span class="project-tag">Hybrid Control</span>
+      <span class="project-tag">Multi-Robot Systems</span>
+      <span class="project-tag">Reinforcement Learning</span>
+      <span class="project-tag">Graph-based Consensus</span>
+    </div>
+
+    <span class="project-cta">Open Repository</span>
+
+  </div>
+
+</a>
           
   <a
   href="https://github.com/aymisxx/TerraDrop-PX4"
