@@ -108,36 +108,25 @@
         PPO-driven Swarm Control
       </h3>
     </div>
-
+<br>
     <p class="project-description">
-      PPO-driven Swarm Control studies whether a learned local navigation policy
-can be lifted into a coherent multi-agent system when combined with classical
-coordination mechanisms. The central issue is that a PPO policy trained on
-local observations can learn useful directional behavior, but naive replication
-across agents does not produce a valid swarm controller, leading to
-clustering, redundant coverage, and unsafe proximity.
+    <strong>
+  A hybrid multi-agent control framework combining PPO-based local navigation with classical coordination to produce safe, coherent, and interpretable swarm behavior.<br><br>
+  </strong>
+</p>
 
-Rather than treating reinforcement learning as a complete solution, the
-framework introduces a hybrid controller in which PPO acts as a local
-navigation primitive while classical multi-robot components impose structure.
-The system combines learned actions with artificial potential fields for
-spacing and field shaping, and a graph-based consensus layer for directional
-coherence, forming a controlled composition rather than an end-to-end policy.
-
-The evaluation is deliberately structured and analysis-driven. Starting from
-a single-agent PPO baseline, the work incrementally introduces repulsion and
-consensus layers, comparing their effects on coverage, safety, and spatial
-organization under identical conditions. The focus is on how each component
-reshapes behavior, not on claiming universal performance gains.
-
-This work is therefore positioned as a hybrid swarm-control analysis study,
-not a fully trained multi-agent RL system. It does not claim global convergence
-or optimality. Instead, it establishes that combining learned local policies
-with classical coordination produces measurable improvements in safety and
-coherence, and identifies conditions under which each layer contributes.
-The result is a modular, interpretable framework for studying multi-robot
-coverage through controlled hybridization.
-    </p>
+<p class="project-description">
+  • PPO policy trained on local 128×128 observation crops.<br>
+  • Learned policy used strictly as local navigation primitive.<br>
+  • Artificial potential fields for inter-agent spacing and coverage shaping.<br>
+  • Repulsion layer eliminates unsafe proximity and clustering.<br>
+  • Graph-based consensus for directional coherence across agents.<br>
+  • Direction consensus operates on velocity vectors, not positions.<br>
+  • CRN-inspired stochastic role switching (Explorer, Surveyor, Defender, Idle).<br>
+  • Controlled hybrid composition instead of end-to-end multi-agent RL.<br>
+  • Quantitative evaluation: coverage, safety, spacing, redundancy metrics.<br>
+  • Demonstrates structured gains in safety and coordination over naive PPO.<br>
+</p>
 
     <div class="project-tags">
       <span class="project-tag">Swarm Robotics</span>
@@ -171,33 +160,25 @@ coverage through controlled hybridization.
         Reflectivity-Augmented LiDAR Scene Understanding for Robotic Perception
       </h3>
     </div>
-
+<br>
     <p class="project-description">
-      Reflect-Aug-Seg studies whether a simple reflectivity-style transformation
-of raw LiDAR intensity can expose more structured and stable behavior for
-semantic scene understanding. The core issue is that raw intensity is not
-a clean surface descriptor, but is entangled with range, geometry, and
-sensing conditions, limiting its direct semantic use in practice.
+    <strong>
+  A LiDAR perception analysis framework studying whether reflectivity-inspired augmentation of raw intensity improves semantic structure and temporal stability.<br><br>
+  </strong>
+</p>
 
-Instead of attempting full reflectivity recovery, the framework introduces
-a lightweight pseudo-reflectivity signal from intensity and range, treated
-as a controlled transformation. The goal is not physical recovery, but to
-test whether this signal behaves more consistently than intensity across
-semantic structure and short-horizon motion windows.
-
-The evaluation is deliberately scoped. Using SemanticKITTI, the system
-analyzes class-wise distributions, separability, and temporal stability
-across small motion windows, supported by visualization and statistical
-inspection. The focus is on signal behavior, not on training a full model
-or claiming end-to-end performance gains.
-
-This work is positioned as a perception analysis study, not a complete
-system. It does not claim calibrated reflectivity or universal improvement.
-Instead, it establishes whether reflectivity-inspired augmentation provides
-a measurable but limited structural advantage over raw intensity, and where
-that advantage holds or breaks down across scenarios. The result is a modular,
-interpretable pipeline for studying reflectivity-aware cues in LiDAR perception.
-    </p>
+<p class="project-description">
+  • Raw LiDAR intensity analyzed as entangled signal (range + geometry effects).<br>
+  • Pseudo-reflectivity constructed via intensity × range coupling.<br>
+  • Treated as controlled transformation, not true reflectivity recovery.<br>
+  • Class-wise distribution analysis across semantic categories.<br>
+  • Evaluates separability improvements over raw intensity baseline.<br>
+  • Temporal stability studied across short-horizon motion windows.<br>
+  • Multi-frame consistency analysis of signal behavior.<br>
+  • SemanticKITTI dataset used for structured evaluation.<br>
+  • Visualization + statistical inspection pipeline.<br>
+  • Establishes limited but measurable structural advantage conditions.<br>
+</p>
 
     <div class="project-tags">
       <span class="project-tag">LiDAR Perception</span>
@@ -226,9 +207,25 @@ interpretable pipeline for studying reflectivity-aware cues in LiDAR perception.
                 <img src="assets/icons/platforms.svg" alt="" class="project-icon" />
                 <h3 class="project-title">MicroUAV-2D</h3>
               </div>
+              <br>
               <p class="project-description">
-                MicroUAV-2D is an ultra-lightweight UAV simulation sandbox engineered for rapid experimentation with vision-driven navigation and autonomy algorithms. The platform models a downward-facing aerial vehicle operating over overhead imagery, exposing a clean perception-to-action interface where navigation policies interact directly with the drone’s sensor footprint through configurable field-of-view observations. Built entirely on a minimal NumPy and OpenCV stack, the simulator delivers deterministic observation extraction, stable border handling, and real-time visualization without relying on heavyweight robotics frameworks, physics engines, or GPU infrastructure. The entire simulation core is exceptionally compact, consisting of roughly 17 KB of source code (excluding the base map image), making it dramatically smaller than conventional robotics simulators that typically span hundreds of megabytes. This extreme simplicity enables instant startup, rapid iteration, and frictionless deployment across machines while preserving the essential perception–action loop required for aerial autonomy research. By stripping simulation down to the fundamental interaction between observation, decision, and motion, MicroUAV-2D serves as a fast prototyping environment for reinforcement learning policies, navigation strategies, and perception-guided control systems for lightweight UAV platforms. Its minimal architecture makes it ideal for researchers and engineers who need a fast, transparent sandbox to prototype aerial autonomy without the overhead of complex simulation ecosystems.
-              </p>
+              <strong>
+  An ultra-lightweight UAV simulation environment designed for rapid prototyping of vision-driven autonomy and control systems.<br><br>
+  </strong>
+</p>
+
+<p class="project-description">
+  • Downward-facing UAV model over overhead imagery.<br>
+  • Local field-of-view observation extraction (perception-driven control).<br>
+  • Clean perception → action interface for navigation policies.<br>
+  • Deterministic simulation behavior with stable border handling.<br>
+  • Minimal implementation using NumPy + OpenCV only.<br>
+  • ~17 KB simulation core (extremely low overhead).<br>
+  • No dependency on ROS, Gazebo, or physics engines.<br>
+  • Real-time visualization and rapid iteration capability.<br>
+  • Used as base environment for RL and swarm experiments.<br>
+  • Designed for fast experimentation and reproducible autonomy research.<br>
+</p>
               <div class="project-tags">
                 <span class="project-tag">UAV Simulator</span>
                 <span class="project-tag">Lightweight Framework</span>
