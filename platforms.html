@@ -108,6 +108,67 @@
               <span class="project-cta">Open Repository</span>
             </div>
           </a>
+          
+          <a
+  href="https://github.com/aymisxx/ApolloSplat-Py"
+  target="_blank"
+  class="project-card"
+>
+
+  <div class="project-image-wrap">
+    <img src="assets/projects/apollosplat-py.png">
+  </div>
+
+  <div class="project-content">
+
+    <div class="project-topline">
+      <img src="assets/icons/platforms.svg" class="project-icon">
+      <h3 class="project-title">
+        SfM-to-ROS2 Lunar Terrain Asset Pipeline
+      </h3>
+    </div>
+
+    <p class="project-description">
+      ApolloSplat-Py is a deployable reconstruction-to-visualization platform
+that turns Apollo 17 imagery into a ROS2-compatible lunar terrain asset. Beyond
+the photogrammetry stage, the project focuses on producing concrete robotics
+artifacts: mesh exports, URDF description files, launch files, RViz2
+configuration, and a complete ROS2 visualization package.
+
+The pipeline begins with raw and processed Apollo image data, runs COLMAP-based
+sparse and dense reconstruction, and selects a canonical Poisson mesh after
+comparing reconstruction quality against a Delaunay alternative. The selected
+mesh is exported into multiple asset formats, including PLY, OBJ, and STL, so
+the result can support different robotics visualization workflows and geometry
+fallbacks.
+
+A dedicated ROS2 package is then generated around the reconstructed asset. The
+package includes a URDF model referencing the exported mesh, a launch file for
+robot_state_publisher and RViz2, and a preconfigured RViz2 scene. The final
+visualization was manually confirmed in RViz2, making the output more than a
+static reconstruction file: it becomes a portable robotics visualization asset.
+
+Gaussian Splatting was explored as a neural rendering extension, but
+the final platform deliberately remains robust and reproducible through the
+classical COLMAP-to-ROS2 path. The completed artifact manifest verifies that all
+expected reconstruction, diagnostic, export, and ROS2 package outputs were
+produced. As a platforms project, ApolloSplat-Py demonstrates an end-to-end
+workflow for converting sparse visual data into a reusable ROS2 terrain asset
+for planetary robotics visualization and downstream simulation-oriented work.
+    </p>
+
+    <div class="project-tags">
+      <span class="project-tag">ROS2</span>
+      <span class="project-tag">URDF / RViz2</span>
+      <span class="project-tag">Robotics Assets</span>
+    </div>
+
+    <span class="project-cta">Open Repository</span>
+
+  </div>
+
+</a>
+          
         </div>
       </section>
 

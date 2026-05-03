@@ -178,6 +178,66 @@ interpretable pipeline for studying reflectivity-aware cues in LiDAR perception.
 
           </a>
           
+ <a
+  href="https://github.com/aymisxx/ApolloSplat-Py"
+  target="_blank"
+  class="project-card"
+>
+
+  <div class="project-image-wrap">
+    <img src="assets/projects/apollosplat-py.png">
+  </div>
+
+  <div class="project-content">
+
+    <div class="project-topline">
+      <img src="assets/icons/perception.svg" class="project-icon">
+      <h3 class="project-title">
+        Sparse-Image Lunar 3D Reconstruction
+      </h3>
+    </div>
+
+    <p class="project-description">
+      ApolloSplat-Py is an image-based reconstruction pipeline that converts a
+short Apollo 17 lunar image sequence into a usable 3D terrain asset. The project
+uses classical photogrammetry rather than learned reconstruction as the primary
+baseline, applying COLMAP structure-from-motion and multi-view stereo to recover
+geometry from sparse historical monocular imagery.
+
+The perception problem is constrained. Only 15 Apollo 17 frames
+are used, with limited viewpoint diversity, unknown capture conditions, and
+imperfect overlap. The pipeline therefore emphasizes geometric consistency,
+diagnostic visibility, and honest reconstruction limits instead of treating the
+output as a perfect object scan.
+
+After preprocessing, COLMAP extracts and matches visual features, estimates a
+sparse camera/point model, runs dense PatchMatch stereo, and fuses depth maps
+into a colored point cloud. The dense reconstruction contains over
+580k points and is used to generate competing Poisson and Delaunay mesh
+candidates. Robust bounding-box diagnostics and visual inspection identify
+Poisson reconstruction as the cleaner final mesh.
+
+The final result is a curved lunar terrain patch rather than a clean isolated object.
+This distinction is important: the project demonstrates geometry
+recovery from sparse archival imagery while exposing artifacts that arise
+from outliers, weak overlap, and under-sampled surface structure. As a perception
+study, ApolloSplat-Py shows how classical SfM/MVS can still produce meaningful
+robotics-ready spatial assets when paired with filtering, meshing, and
+quantitative diagnostics.
+    </p>
+
+    <div class="project-tags">
+      <span class="project-tag">Photogrammetry</span>
+      <span class="project-tag">3D Reconstruction</span>
+      <span class="project-tag">COLMAP SfM/MVS</span>
+    </div>
+
+    <span class="project-cta">Open Repository</span>
+
+  </div>
+
+</a>
+          
           <a
   href="https://github.com/aymisxx/TerraDrop-PX4"
   target="_blank"
